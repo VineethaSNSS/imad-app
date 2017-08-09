@@ -40,7 +40,7 @@ app.get('/article-3',function(req,res) {
 });
 var names=[];
 app.get('/submit-name/:name',function(req,res){
-   var name=req.params.name;;
+   var name=req.params.name;
    names.push(name);
    res,send(names);
 });
