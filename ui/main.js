@@ -13,8 +13,8 @@ button.onclick=function(){
                 span.innerHTML = counter.toString();
             }
         }
-    }
-}
+    };
+};
 var nameinput= document.getElementById('name');
 var name=nameinput.value;
 var submit=document.getElementById('submit_btn');
@@ -26,4 +26,7 @@ submit.onclick=function(){
   {
       list+='<li>'+names[i]+'</li>';
   }
-}
+
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=list;
+};
